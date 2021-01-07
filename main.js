@@ -16,7 +16,6 @@ const chooseLoc = () => {
     }
 };
 
-
 const chooseSize = () => {
     if (cm>= 22 | cm<= 29) {
         console.log("Tu pie es de " + cm)
@@ -24,7 +23,6 @@ const chooseSize = () => {
           console.log("Debe ser un valor entre 22 y 29")
     }
 };
-
 
 const enviar = () => {
     if (send===true) {
