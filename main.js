@@ -3,15 +3,6 @@ let EU = document.getElementById("EU");
 let UK = document.getElementById("UK");
 let send = document.getElementById("buttom");
 let cm = document.getElementById("medida");
-
-
-const enviar = () => {
-    if (send===true) {
-        chooseLoc();
-        chooseSize();
-    }
-};
-
 const chooseLoc = () => {
     if (USA===true) {
         console.log("You chose USA");
@@ -33,3 +24,13 @@ const chooseSize = () => {
           console.log("Debe ser un valor entre 22 y 29")
     }
 };
+
+
+const enviar = () => {
+    if (send===true) {
+        chooseLoc();
+        chooseSize();
+    }
+};
+
+enviar();
