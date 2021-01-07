@@ -9,8 +9,7 @@ if (USA===true) {
     console.log("You chose USA");
 } else if (EU===true){
     console.log("You chose EU");
-} 
-else if (UK===true) {
+} else if (UK===true) {
     console.log("You chose UK");
 }
 };
@@ -18,6 +17,8 @@ else if (UK===true) {
 const medida = () => {
     if (cm>22 | cm<29) {
         console.log("Tu pie es de " + cm)
+    } else {
+        console.log("Debe ser un valor entre 22 y 29")
     }
 };
 
