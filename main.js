@@ -1,9 +1,7 @@
-let USA = document.getElementById("USA");
-let EU = document.getElementById("EU");
-let UK = document.getElementById("UK");
-let send = document.getElementById("buttom");
-let cm = document.getElementById("medida");
 const chooseLoc = () => {
+    let USA = document.getElementById("USA");
+    let EU = document.getElementById("EU");
+    let UK = document.getElementById("UK");
     if (USA===true) {
         console.log("You chose USA");
         return USA;
@@ -17,6 +15,7 @@ const chooseLoc = () => {
 };
 
 const chooseSize = () => {
+    let cm = document.getElementById("medida");
     if (cm>= 22 | cm<= 29) {
         console.log("Tu pie es de " + cm)
     } else {
@@ -24,7 +23,8 @@ const chooseSize = () => {
     }
 };
 
-const enviar = () => {
+let enviar = () => {
+    let send = document.getElementById("buttom");
     if (send===true) {
         chooseLoc();
         chooseSize();
