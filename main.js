@@ -1,34 +1,41 @@
-const calcUSA = () => {
-    for (var i=22; i<29 || i>22; i) {
+var medida = parseFloat(document.getElementById("size").value);
 
+const calcUSA = () => {
+    if (medida >= 22 && medida <= 29) {
+        let talle_USA = medida - 17;
+        document.write("El talle es de " + talle_USA);
     }
 }
+
+const calcEU = () => {
+    if (medida >= 22 && medida <= 29) {
+        let talle_EU = medida + 13.5;
+        document.write("El talle es de " + talle_EU);
+    }
+}
+
+const calcUK = () => {
+    if (medida >= 22 && medida <= 29) {
+        let talle_UK = medida - 19.5;
+        document.write("El talle es de " + talle_UK);
+    }
+}
+
 const chooseLoc = () => {
     let USA = document.getElementById("USA").checked;
     let EU = document.getElementById("EU").checked;
     let UK = document.getElementById("UK").checked;
-    if (USA===true) {
-        console.log("You chose USA");
-    } else if (EU===true){
-        console.log("You chose EU");
-    } else if (UK===true) {
-        console.log("You chose UK");
-    }
-};
-
-
-const chooseSize = () => {
-    let cm = document.getElementById("size").value;
-    if (cm >= 22 && cm <= 29) {
-        console.log("Tu pie es de " + cm + " cm");
-    } else {
-        alert("Debe ser un valor entre 22 y 29");
+    if (USA == true) {
+        calcUSA;
+    } else if (EU == true){
+        calcEU;
+    } else if (UK == true) {
+        calcUK;
     }
 };
 
 let enviar = () => {
     chooseLoc();
-    chooseSize();
 };
 
 document.getElementById("buttom").addEventListener("click", enviar);
