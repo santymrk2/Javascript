@@ -1,3 +1,8 @@
+const calcUSA = () => {
+    for (var i=22; i<29 || i>22; i) {
+
+    }
+}
 const chooseLoc = () => {
     let USA = document.getElementById("USA").checked;
     let EU = document.getElementById("EU").checked;
@@ -15,9 +20,9 @@ const chooseLoc = () => {
 const chooseSize = () => {
     let cm = document.getElementById("size").value;
     if (cm >= 22 && cm <= 29) {
-        console.log("Tu pie es de " + cm + " cm")
+        console.log("Tu pie es de " + cm + " cm");
     } else {
-        console.log("Debe ser un valor entre 22 y 29")
+        alert("Debe ser un valor entre 22 y 29");
     }
 };
 
