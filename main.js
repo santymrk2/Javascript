@@ -1,4 +1,4 @@
-var medida = parseFloat(document.getElementById("size").value);
+var medida = Math.round(document.getElementById("size").value);
 
 const calcUSA = () => {
     if (medida >= 22 && medida <= 29) {
