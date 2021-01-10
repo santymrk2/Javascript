@@ -4,23 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Talles de zapatillas</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-    <div>
-        <h1>Convierte tu calzado</h1>
-        <form>
-            <p>Elige el lugar al que quieres convertir:</p>
-            <input type="radio" id="USA" name="location" value="USA">
-            <label for="USA">United States</label><br>
-            <input type="radio" id="EU" name="location" value="EU">
-            <label for="EU">Europe</label><br>
-            <input type="radio" id="UK" name="location" value="UK">
-            <label for="UK">United Kingdom</label><br>
-            <label for="size">Cual es la medida de tu pie (cm): <label><br>
-            <input type="text" id="size" name="size">
-            <br>
-            <input type="buttom" id="buttom" value="enviar">
-        </form>
+<body class="font-sans">
+    <div class="flex justify-center items-start">
+        <div>
+            <h1 class="font-bold">Convierte tu calzado</h1>
+        </div>
+        <div>
+            <p>Elige el lugar al que quieres convertir:</p><br>
+        </div>
+        <div>
+            <form>
+                <input type="radio" id="USA" name="location" value="USA">
+                <label for="USA">United States</label><br>
+                <input type="radio" id="EU" name="location" value="EU">
+                <label for="EU">Europe</label><br>
+                <input type="radio" id="UK" name="location" value="UK">
+                <label for="UK">United Kingdom</label><br>
+                <label for="size">Cual es la medida de tu pie (cm): <label><br>
+                <input type="text" id="size" name="size">
+                <br>
+                <input type="buttom" id="buttom" value="enviar">
+            </form>
+        </div>
     </div>
     <script src="main.js"></script>
 </body>
