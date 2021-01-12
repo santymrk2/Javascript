@@ -3,21 +3,21 @@ var medida = Math.round(document.getElementById("size").value);
 const calcUSA = () => {
     if (medida >= 22 && medida <= 29) {
         let talle_USA = medida - 17;
-        document.write("El talle es de " + talle_USA);
+        document.getElementById("result").innerHTML - "El talle es de ";
     }
 }
 
 const calcEU = () => {
     if (medida >= 22 && medida <= 29) {
         let talle_EU = medida + 13.5;
-        document.write("El talle es de " + talle_EU);
+        document.getElementById("result").innerHTML - "El talle es de " + talle_EU;
     }
 }
 
 const calcUK = () => {
     if (medida >= 22 && medida <= 29) {
         let talle_UK = medida - 19.5;
-        document.write("El talle es de " + talle_UK);
+        document.getElementById("result").innerHTML - "El talle es de " + talle_UK;
     }
 }
 
