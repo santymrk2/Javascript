@@ -4,6 +4,7 @@ const calcUSA = () => {
     if (medida >= 22 && medida <= 29) {
         let talle_USA = medida - 17;
         document.getElementById("result").innerHTML = "El talle es de " + talle_USA;
+        console.log("tu resultado de USA");
     }
 }
 
@@ -27,6 +28,7 @@ const chooseLoc = () => {
     let UK = document.getElementById("UK").checked;
     if (USA == true) {
         calcUSA;
+        console.log("elegiste USA");
     } else if (EU == true){
         calcEU;
     } else if (UK == true) {
