@@ -1,7 +1,7 @@
 var medida = Math.round(document.getElementById("size").value);
 
 const calcUSA = () => {
-    if (medida >= 22 || medida <= 29) {
+    if (medida >= 22 && medida <= 29) {
         let talle_USA = medida - 17;
         document.getElementById("result").innerHTML = "El talle es de " + talle_USA;
         console.log("tu resultado de USA" + talle_USA);
