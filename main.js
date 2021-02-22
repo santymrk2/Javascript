@@ -27,11 +27,11 @@ const chooseLoc = () => {
     let EU = document.getElementById("EU").checked;
     let UK = document.getElementById("UK").checked;
     if (USA == true) {
-        calcUSA;
+        calcUSA();
     } else if (EU == true){
-        calcEU;
+        calcEU();
     } else if (UK == true) {
-        calcUK;
+        calcUK();
     }
 };
 
